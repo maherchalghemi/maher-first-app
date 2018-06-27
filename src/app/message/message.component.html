@@ -1,0 +1,11 @@
+Two way Binding
+<input type="text" #txtmsg>
+
+<button type="submit" (click)="btnClicked(txtmsg.value)">OK</button>
+<br> One way Binding
+<input type="text" [(ngModel)]="msg">
+
+<!-- //Display from one way binding -->
+<p>{{msg}}</p>
+<!-- //Display from two way binding -->
+<p>{{msgtwoway}}</p>
